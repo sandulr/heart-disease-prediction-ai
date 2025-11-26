@@ -1,0 +1,82 @@
+.modalOverlay {
+  position: fixed !important;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.35s ease forwards;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.modalContent {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 28px 32px;
+  width: 90%;
+  max-width: 420px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  
+  animation: popUp 0.35s ease forwards;
+  opacity: 0;
+  transform: scale(0.85);
+  position: relative;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.06);
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #eee;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 14px;
+}
+
+
+.low {
+  box-shadow: 0 0 25px rgba(0, 255, 140, 0.6);
+}
+
+.moderate {
+  box-shadow: 0 0 25px rgba(255, 190, 0, 0.6);
+}
+
+.high {
+  box-shadow: 0 0 25px rgba(255, 60, 60, 0.6);
+}
+
+
+.title_low {
+  color: #1bffa2;
+}
+
+.title_moderate {
+  color: #ffce3a;
+}
+
+.title_high {
+  color: #ff5757;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
