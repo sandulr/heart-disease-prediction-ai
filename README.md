@@ -20,10 +20,6 @@ A modern full-stack HealthTech application that predicts heart disease risk usin
 * [Features](#features)
 * [Tech Stack](#tech-stack)
 * [AI Model](#ai-model)
-* [Project Structure](#project-structure)
-* [Setup & Installation](#setup--installation)
-* [Running the Project](#running-the-project)
-* [Screenshots](#screenshots)
 * [Future Improvements](#future-improvements)
 * [Disclaimer](#disclaimer)
 
